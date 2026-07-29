@@ -31,7 +31,7 @@ jobs:
       - name: Build all proxy DLLs
         shell: powershell
         run: |
-          $Dlls = @("version.dll", "hid.dll", "dinput8.dll", "winhttp.dll")
+          $Dlls = @("version.dll", "hid.dll", "dinput8.dll", "winhttp.dll", "wsock32.dll", "ole32.dll")
           $DistDir = "dist"
           
           # Create output directory
